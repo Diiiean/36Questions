@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x4R-q7-rtb">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Questions View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="QuestionsViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oyq-Ga-5hi">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <color key="backgroundColor" red="0.070654414590000006" green="0.70051282640000001" blue="0.82422065730000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThC-t1-QAm">
+                                <rect key="frame" x="178" y="427" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="Vfs-T3-AOi"/>
+                                    <constraint firstAttribute="height" constant="72" id="foF-pm-1w9"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="startTimer"/>
+                                <connections>
+                                    <segue destination="6T9-At-Qc9" kind="show" id="Si6-um-Ewu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liy-v9-VA3">
+                                <rect key="frame" x="10" y="99" width="408" height="328"/>
+                                <color key="backgroundColor" red="0.97737234830856323" green="0.93673700094223022" blue="0.92428880929946899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKf-h6-Pfs">
+                                <rect key="frame" x="16" y="64" width="192" height="20"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
+                                <color key="tintColor" red="0.97737234830856323" green="0.93673700094223022" blue="0.92428880929946899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="topButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYF-nr-CCQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySK-ce-dVY">
+                                <rect key="frame" x="10" y="499" width="408" height="338"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-yA-syi">
+                                <rect key="frame" x="220" y="852" width="192" height="20"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
+                                <color key="tintColor" red="0.97737234830856323" green="0.93673700094223022" blue="0.92428880929946899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="bottomButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0t-Xg-Qrw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="liy-v9-VA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="6jM-SL-T6N"/>
+                            <constraint firstItem="oyq-Ga-5hi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Wz-RV-RlP"/>
+                            <constraint firstItem="ThC-t1-QAm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BZa-BR-tRf"/>
+                            <constraint firstItem="liy-v9-VA3" firstAttribute="top" secondItem="jKf-h6-Pfs" secondAttribute="bottom" constant="15" id="CHE-3S-Wsf"/>
+                            <constraint firstItem="ySK-ce-dVY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="F7k-c0-EGK"/>
+                            <constraint firstItem="liy-v9-VA3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="LSO-lH-mIf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="liy-v9-VA3" secondAttribute="trailing" constant="10" id="Lgs-nk-5L7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ySK-ce-dVY" secondAttribute="trailing" constant="10" id="MIk-A0-pto"/>
+                            <constraint firstItem="ThC-t1-QAm" firstAttribute="top" secondItem="liy-v9-VA3" secondAttribute="bottom" id="PGY-oK-IdZ"/>
+                            <constraint firstItem="2FQ-yA-syi" firstAttribute="top" secondItem="ySK-ce-dVY" secondAttribute="bottom" constant="15" id="Pjg-Ty-1sg"/>
+                            <constraint firstItem="oyq-Ga-5hi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tfv-Iv-Fi0"/>
+                            <constraint firstItem="jKf-h6-Pfs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xk8-ze-Yjt"/>
+                            <constraint firstAttribute="bottom" secondItem="oyq-Ga-5hi" secondAttribute="bottom" id="aiY-YN-vLd"/>
+                            <constraint firstItem="ThC-t1-QAm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMt-D0-NFY"/>
+                            <constraint firstItem="jKf-h6-Pfs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="led-TO-bTJ"/>
+                            <constraint firstItem="ySK-ce-dVY" firstAttribute="top" secondItem="ThC-t1-QAm" secondAttribute="bottom" id="nde-EZ-7XV"/>
+                            <constraint firstItem="ySK-ce-dVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ooL-AK-fz9"/>
+                            <constraint firstItem="2FQ-yA-syi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="220" id="q4c-ft-n07"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2FQ-yA-syi" secondAttribute="trailing" constant="16" id="q5v-i1-LbT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2FQ-yA-syi" secondAttribute="bottom" constant="20" id="uDp-a8-EFc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ySK-ce-dVY" secondAttribute="bottom" constant="55" id="uYt-zm-AKr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jKf-h6-Pfs" secondAttribute="trailing" constant="220" id="vqr-Mc-osi"/>
+                            <constraint firstItem="oyq-Ga-5hi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zvW-hy-Thd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j9T-Tj-wgE"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bottomQuestionLabel" destination="ySK-ce-dVY" id="OX6-fH-Ze4"/>
+                        <outlet property="startTimerImage" destination="ThC-t1-QAm" id="boF-xe-6qP"/>
+                        <outlet property="topButtonOutlet" destination="jKf-h6-Pfs" id="coh-D5-5cZ"/>
+                        <outlet property="topQuestionLabel" destination="liy-v9-VA3" id="C3G-9n-ApN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3507.4766355140187" y="-824.8380129589633"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="dds-cQ-kte">
+            <objects>
+                <viewController id="6T9-At-Qc9" customClass="TimerViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7gL-qD-DJo">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-b8-7dc">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khk-E9-o9w">
+                                <rect key="frame" x="20" y="194" width="357" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-w1-Ukh">
+                                <rect key="frame" x="5" y="624" width="418" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="hwH-FI-exY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bcy-ef-gUT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="khk-E9-o9w" firstAttribute="top" secondItem="bcy-ef-gUT" secondAttribute="top" constant="150" id="8Yq-rP-JcO"/>
+                            <constraint firstItem="bcy-ef-gUT" firstAttribute="trailing" secondItem="khk-E9-o9w" secondAttribute="trailing" constant="51" id="AhE-iA-WeM"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="LmC-b8-7dc" secondAttribute="bottom" id="DKw-gh-kON"/>
+                            <constraint firstItem="LmC-b8-7dc" firstAttribute="leading" secondItem="bcy-ef-gUT" secondAttribute="leading" id="HxK-SH-czG"/>
+                            <constraint firstItem="LmC-b8-7dc" firstAttribute="top" secondItem="bcy-ef-gUT" secondAttribute="top" id="Sdo-ea-3vB"/>
+                            <constraint firstItem="bcy-ef-gUT" firstAttribute="trailing" secondItem="LmC-b8-7dc" secondAttribute="trailing" id="Sly-Hj-Mnu"/>
+                            <constraint firstItem="bcy-ef-gUT" firstAttribute="bottom" secondItem="KyN-w1-Ukh" secondAttribute="bottom" constant="68" id="W11-BP-lhs"/>
+                            <constraint firstItem="KyN-w1-Ukh" firstAttribute="leading" secondItem="bcy-ef-gUT" secondAttribute="leading" constant="5" id="blv-4V-QMR"/>
+                            <constraint firstItem="bcy-ef-gUT" firstAttribute="trailing" secondItem="KyN-w1-Ukh" secondAttribute="trailing" constant="5" id="by7-Kf-KDS"/>
+                            <constraint firstItem="LmC-b8-7dc" firstAttribute="bottom" secondItem="bcy-ef-gUT" secondAttribute="bottom" id="kTM-dK-VBq"/>
+                            <constraint firstItem="khk-E9-o9w" firstAttribute="leading" secondItem="bcy-ef-gUT" secondAttribute="leading" constant="20" id="qHJ-eH-qAT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1CX-Bv-KEh"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="khk-E9-o9w" id="6wf-3S-wSI"/>
+                        <outlet property="textLabel" destination="KyN-w1-Ukh" id="nsG-zu-ka5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sC1-C7-GcM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4292.753623188406" y="-825.66964285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cy7-CQ-NSa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x4R-q7-rtb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZNG-PL-R1K">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jtw-Vv-28W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBm-YP-K4x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="-824"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+    <resources>
+        <image name="eye" width="320.33334350585938" height="731"/>
+        <image name="startTimer" width="765.33331298828125" height="765.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
