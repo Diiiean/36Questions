@@ -100,8 +100,8 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bottomQuestionLabel" destination="ySK-ce-dVY" id="OX6-fH-Ze4"/>
-                        <outlet property="nextTopButtonOutlet" destination="jKf-h6-Pfs" id="coh-D5-5cZ"/>
                         <outlet property="startTimerImage" destination="ThC-t1-QAm" id="boF-xe-6qP"/>
+                        <outlet property="topButtonOutlet" destination="jKf-h6-Pfs" id="pGL-x5-WPE"/>
                         <outlet property="topQuestionLabel" destination="liy-v9-VA3" id="C3G-9n-ApN"/>
                     </connections>
                 </viewController>

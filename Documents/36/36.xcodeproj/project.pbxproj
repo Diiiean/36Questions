@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045AE74C269C8876004C2EAE /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045AE74B269C8876004C2EAE /* QuestionsViewController.swift */; };
 		045C4C12266B9102007E993F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C4C11266B9102007E993F /* AppDelegate.swift */; };
 		045C4C14266B9102007E993F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C4C13266B9102007E993F /* SceneDelegate.swift */; };
 		045C4C19266B9102007E993F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045C4C17266B9102007E993F /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045AE74B269C8876004C2EAE /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		045C4C0E266B9102007E993F /* 36.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 36.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045C4C11266B9102007E993F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		045C4C13266B9102007E993F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				04666A33266BF0FD00B036B7 /* TimerViewController.swift */,
+				045AE74B269C8876004C2EAE /* QuestionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				0486EAC12678E34D005BBC9E /* QuestionBrain.swift in Sources */,
 				04666A34266BF0FD00B036B7 /* TimerViewController.swift in Sources */,
+				045AE74C269C8876004C2EAE /* QuestionsViewController.swift in Sources */,
 				045C4C12266B9102007E993F /* AppDelegate.swift in Sources */,
 				0479BF33266E2CC400C38BAA /* Question.swift in Sources */,
 				045C4C14266B9102007E993F /* SceneDelegate.swift in Sources */,
@@ -346,7 +350,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.diana.36questions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diananuansengsy.36questions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -366,7 +370,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.diana.36questions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diananuansengsy.36questions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
