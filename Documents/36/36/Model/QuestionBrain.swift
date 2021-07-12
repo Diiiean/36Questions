@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+
 
 struct QuestionBrain {
     var questionNumberForBottomLabel = 0
@@ -49,7 +51,7 @@ struct QuestionBrain {
         Question(textOfQuestion: "36. Поделитесь личной проблемой и спросите совета у вашего партнера о том, как он или она может справиться с ней. Кроме того, попросите своего партнера подумать о том, как вы, по-видимому, относитесь к выбранной вами проблеме."),
         Question(textOfQuestion: "И в заключение, смотрите друг другу в глаза в течение 4 минут, не отводя взгляда."),
         Question(textOfQuestion: "И в заключение, смотрите друг другу в глаза в течение 4 минут, не отводя взгляда.")]
-    
+    //next question for odd numbers
     mutating func nextQuestionForBottomLabel() {
         if questionNumberForBottomLabel + 1 < questions.count - 1 {
             questionNumberForBottomLabel += 2
@@ -58,21 +60,20 @@ struct QuestionBrain {
             questionNumberForBottomLabel = 0
         }
     }
+    //next question for even numbers
     mutating func nextQuestionForTopLabel() {
-        if questionNumberForTopLabel + 1 < questions.count - 1 {             questionNumberForTopLabel += 2
+        if questionNumberForTopLabel + 1 < questions.count - 1 {             questionNumberForTopLabel += 2            
         }
         else {
             questionNumberForTopLabel = 1
         }
     }
-    
-    func getQuestionTextForBottomLabel() -> String {
+    mutating func getQuestionTextForBottomLabel() -> String {
         return questions[questionNumberForBottomLabel].textOfQuestion
     }
-    func getQuestionTextForTopLabel() -> String {
-        return questions[questionNumberForTopLabel].textOfQuestion
+    mutating func getQuestionTextForTopLabel() -> String {
+        return questions[questionNumberForTopLabel].textOfQuestion        
     }
-    
     func showButtonTimer() -> Bool{
         if questionNumberForBottomLabel == 10 ||  questionNumberForTopLabel == 37 || questionNumberForBottomLabel == 36 {
             return true

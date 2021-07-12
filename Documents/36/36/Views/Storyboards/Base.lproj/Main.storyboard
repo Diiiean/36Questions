@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x4R-q7-rtb">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -14,15 +14,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="QuestionsViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oyq-Ga-5hi">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" red="0.070654414590000006" green="0.70051282640000001" blue="0.82422065730000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ThC-t1-QAm">
-                                <rect key="frame" x="178" y="427" width="72" height="72"/>
+                                <rect key="frame" x="171" y="332" width="72" height="72"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="72" id="Vfs-T3-AOi"/>
                                     <constraint firstAttribute="height" constant="72" id="foF-pm-1w9"/>
@@ -32,38 +32,38 @@
                                     <segue destination="6T9-At-Qc9" kind="show" id="Si6-um-Ewu"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liy-v9-VA3">
-                                <rect key="frame" x="10" y="99" width="408" height="328"/>
-                                <color key="backgroundColor" red="0.97737234830856323" green="0.93673700094223022" blue="0.92428880929946899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="liy-v9-VA3">
+                                <rect key="frame" x="10" y="55" width="394" height="277"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="22"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKf-h6-Pfs">
-                                <rect key="frame" x="16" y="64" width="192" height="20"/>
+                                <rect key="frame" x="16" y="20" width="178" height="20"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
                                 <color key="tintColor" red="0.97737234830856323" green="0.93673700094223022" blue="0.92428880929946899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="NEXT"/>
                                 <connections>
-                                    <action selector="topButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYF-nr-CCQ"/>
+                                    <action selector="nextTopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kYF-nr-CCQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySK-ce-dVY">
-                                <rect key="frame" x="10" y="499" width="408" height="338"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="ySK-ce-dVY">
+                                <rect key="frame" x="10" y="404" width="394" height="277"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FQ-yA-syi">
-                                <rect key="frame" x="220" y="852" width="192" height="20"/>
+                                <rect key="frame" x="220" y="696" width="178" height="20"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="26"/>
                                 <color key="tintColor" red="0.97737234830856323" green="0.93673700094223022" blue="0.92428880929946899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="bottomButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0t-Xg-Qrw"/>
+                                    <action selector="nextBottomButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0t-Xg-Qrw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -100,8 +100,8 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bottomQuestionLabel" destination="ySK-ce-dVY" id="OX6-fH-Ze4"/>
+                        <outlet property="nextTopButtonOutlet" destination="jKf-h6-Pfs" id="coh-D5-5cZ"/>
                         <outlet property="startTimerImage" destination="ThC-t1-QAm" id="boF-xe-6qP"/>
-                        <outlet property="topButtonOutlet" destination="jKf-h6-Pfs" id="coh-D5-5cZ"/>
                         <outlet property="topQuestionLabel" destination="liy-v9-VA3" id="C3G-9n-ApN"/>
                     </connections>
                 </viewController>
@@ -114,20 +114,20 @@
             <objects>
                 <viewController id="6T9-At-Qc9" customClass="TimerViewController" customModule="_6" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gL-qD-DJo">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-b8-7dc">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khk-E9-o9w">
-                                <rect key="frame" x="20" y="194" width="357" height="0.0"/>
+                                <rect key="frame" x="20" y="150" width="343" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KyN-w1-Ukh">
-                                <rect key="frame" x="5" y="624" width="418" height="200"/>
+                                <rect key="frame" x="5" y="468" width="404" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="hwH-FI-exY"/>
                                 </constraints>
@@ -168,7 +168,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x4R-q7-rtb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZNG-PL-R1K">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

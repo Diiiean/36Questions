@@ -12,7 +12,6 @@
 		045C4C19266B9102007E993F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045C4C17266B9102007E993F /* Main.storyboard */; };
 		045C4C1B266B9105007E993F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045C4C1A266B9105007E993F /* Assets.xcassets */; };
 		045C4C1E266B9105007E993F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045C4C1C266B9105007E993F /* LaunchScreen.storyboard */; };
-		045C4C29266B9388007E993F /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045C4C28266B9388007E993F /* QuestionsViewController.swift */; };
 		04666A34266BF0FD00B036B7 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04666A33266BF0FD00B036B7 /* TimerViewController.swift */; };
 		0478C2492680BF41006F4922 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0478C2482680BF41006F4922 /* alarm_sound.mp3 */; };
 		0479BF33266E2CC400C38BAA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0479BF32266E2CC400C38BAA /* Question.swift */; };
@@ -27,7 +26,6 @@
 		045C4C1A266B9105007E993F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045C4C1D266B9105007E993F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045C4C1F266B9105007E993F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045C4C28266B9388007E993F /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		04666A33266BF0FD00B036B7 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		0478C2482680BF41006F4922 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		0479BF32266E2CC400C38BAA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 		045C4C26266B9140007E993F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				045C4C28266B9388007E993F /* QuestionsViewController.swift */,
 				04666A33266BF0FD00B036B7 /* TimerViewController.swift */,
 			);
 			path = Controllers;
@@ -194,7 +191,6 @@
 				04666A34266BF0FD00B036B7 /* TimerViewController.swift in Sources */,
 				045C4C12266B9102007E993F /* AppDelegate.swift in Sources */,
 				0479BF33266E2CC400C38BAA /* Question.swift in Sources */,
-				045C4C29266B9388007E993F /* QuestionsViewController.swift in Sources */,
 				045C4C14266B9102007E993F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,28 +23,26 @@ class TimerViewController: UIViewController {
         textLabel.text = "Дождитесь звонка"
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
         }
-    
     @objc func updateCounter() {
         if counter > 0 {
             counterLabel.text = "\(String(counter)) сек"
             counter -= 1
         }
+        //else play sound
         else if allowedPlaySound && counter != -1 {
             timer.invalidate()
             let url = Bundle.main.url(forResource: "alarm_sound", withExtension: "mp3")
             audioPlayer = try! AVAudioPlayer(contentsOf: url!)
             audioPlayer?.play()
             counter = -1  //to exit the loop
-            textLabel.text = "Готово"
+            textLabel.text = "Время истекло"
             counterLabel.text = "0 сек"
         }
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         TimerViewController.isOnScreen = true
     }
-    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         TimerViewController.isOnScreen = false
